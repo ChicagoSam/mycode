@@ -9,7 +9,6 @@ import random
 def congrats():
     congrats = [
         "How interesting!",
-        "What a lovely name!",
         "Very impressive!",
         "You must be very important!",
         "You should be proud!",
