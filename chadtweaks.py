@@ -8,14 +8,15 @@ import random
 
 def congrats():
     congrats = [
-        "How interesting!",
-        "What a lovely name!",
-        "Very impressive!",
-        "You must be very important!",
-        "You should be proud!",
-        ]
-    random_congrats = random.choice(congrats)
-    return random_congrats
+            "How interesting!",
+            "What a lovely name!",
+            "The 'J' stands for 'Juicy'--but you knew that"
+            "Very impressive!",
+            "You must be very important!",
+            "You should be proud!",
+            ]
+    random_congrats2 = random.choice(congrats)
+    return random_congrats2
 
 print ("ARE **YOU** J. ROBERT OPPENHEIMER?!?")
 print () # empty print() commands for formatting
