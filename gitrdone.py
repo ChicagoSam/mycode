@@ -1,26 +1,37 @@
 #!/usr/bin/env python3
 
+"""automating post lab git commands"""
+
+#TO DO add alias for gitrdone
+
 #import modules for tools
 import os
 import subprocess
 
 #asking user for commit message before starting process
+#add While to make sure comment not blank or git commit will fail
 comment = input(
         "What is the comment for this git add, commit, and push?\n"
         )
 
-print("Changing directories...")
-os.chdir('/home/student/mycode')
+#Git commands with variable comment
+#add error handling
+def main():
+    print("Changing directories...")
+    os.chdir('/home/student/mycode')
 
-print("git add *...")
-subprocess.run(['git','add','.']) # . or *?
+    print("git add *...")
+    subprocess.run(['git','add','.']) # . or *?
 
-print(f"git commit '{comment}'...")
-subprocess.run(['git', 'commit', '-m', '{comment}'])
+    print(f"git commit '{comment}'...")
+    subprocess.run(['git', 'commit', '-m', f'{comment}'])
 
-print("git push origin HEAD...")
-subprocess.run(['git','push','origin','HEAD'])
+    print("git push origin HEAD...")
+    subprocess.run(['git','push','origin','HEAD'])
 
-print("(finish message)!")
+    print("Pushed with comment '{comment}'!")
+
+if __name__=='__main__':
+    main()
 
 
