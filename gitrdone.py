@@ -2,22 +2,25 @@
 
 #import modules for tools
 import os
-
-repo = git.Repo('origin')
-origin = repo.remote(name='origin')
-
+import subprocess
 
 #asking user for commit message before starting process
-comment = input(print("What is the comment for this git add, commit, and push?\n"))
+comment = input(
+        "What is the comment for this git add, commit, and push?\n"
+        )
 
 print("Changing directories...")
 os.chdir('/home/student/mycode')
 
 print("git add *...")
-repo.git.add('--all')
+subprocess.run(['git','add','.']) # . or *?
 
-print(f"git commit '{comment}'")
-repo.git.commit(-m, '{comment}') #not sure about this
+print(f"git commit '{comment}'...")
+subprocess.run(['git', 'commit', '-m', '{comment}'])
 
-print("git push origin HEAD")
-origin.push()
+print("git push origin HEAD...")
+subprocess.run(['git','push','origin','HEAD'])
+
+print("(finish message)!")
+
+
