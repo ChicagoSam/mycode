@@ -13,8 +13,8 @@ joke = "https://official-joke-api.appspot.com/random_joke"
 # Intro
 os.system('clear') # Clearing Screen
 f= open ('pirateship.txt','r')
-print(''.join([line for line in f]))
-title = "\nWelcome to the Drunken Sailor, where every comedian is a pirate!\n"
+print(''.join([line for line in f]))  #print ship
+title = "Welcome to the Drunken Sailor, where every comedian is a pirate!\n"
 pirate = translate(title) # translates to pirate
 print(title)
 
@@ -40,7 +40,7 @@ def main():
             print(pirate)
 
             # Punchline
-            print("/n")
+            print()
             punchline = (delivery['punchline'])
             pirate = translate(punchline) # translates to pirate
             print(pirate)
