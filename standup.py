@@ -12,6 +12,8 @@ joke = "https://official-joke-api.appspot.com/random_joke"
 
 # Intro
 os.system('clear') # Clearing Screen
+f= open ('pirateship.txt','r')
+print(''.join([line for line in f]))
 title = "\nWelcome to the Drunken Sailor, where every comedian is a pirate!\n"
 pirate = translate(title) # translates to pirate
 print(title)
