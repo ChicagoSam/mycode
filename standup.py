@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""random joke generator, user can decide to continue or not"""
+"""random joke generator as delivered by pirates"""
 
 import requests
 import pprint
@@ -10,7 +10,9 @@ from arrr import translate
 # Source API
 joke = "https://official-joke-api.appspot.com/random_joke"
 
-print("\nWelcome to the Chuckle Hut, Shinglehouse's one and only comedy option!\n")
+tite = "\nWelcome to the Drunken Sailor, where every stand up comedian is a pirate!\n"
+pirate = translate(title)
+print(title)
 
 # Random Jokes
 def main():
