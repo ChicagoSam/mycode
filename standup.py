@@ -16,7 +16,7 @@ f= open ('pirateship.txt','r')
 print(''.join([line for line in f]))  #print ship
 title = "Welcome to the Drunken Sailor, where every comedian is a pirate!\n"
 pirate = translate(title) # translates to pirate
-print(title)
+print(pirate)
 
 # Random Jokes in Pirate
 def main():
