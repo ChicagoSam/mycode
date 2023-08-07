@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Identify Yourself, Hero!</title>
+    <form action = "/xmen" method = "POST">
+        <h1>Welcome to Our Pet Store, {{ hero }}!</h1>
+        
+<p>Cerebro has located the following mutants!</p>
+<p>X-Men available for mission:</p>
+<ul>
+{% for mutant in mutant_list %}
+<li>{{ mutant|upper }}</li>
+{% endfor %}
+</ul>
+
+        <p>Enter mutant located and available for duty:</p>
+        <p><input type = "text" name = "mutantvar"></p>
+        <p><input type = "submit" value = "submit"></p>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
