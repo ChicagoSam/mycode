@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+p {
+    color: red;             <!--This still remains true-->
+    font-size: 24px;
+}
+li {
+    color: blue;
+}
+.list_div {                   <!--Note the dot before this class name-->
+    border: 2px solid green;  <!--Often, even with only one style property the semicolon will be included, in case more styling is added-->
+}
+#div_with_links {
+    color: white;
+    background-color: grey;
+}
