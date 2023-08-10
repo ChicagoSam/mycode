@@ -15,9 +15,14 @@
 {% endfor %}
 </ul>
 
-        <p>Enter mutant located and available for duty:</p>
+        <p>Add mutant to duty roster:</p>
         <p><input type = "text" name = "mutantvar"></p>
         <p><input type = "submit" value = "submit"></p>
+    </form>
+    <form action="/removemutant" method="post">
+        <label for="mutant_to_remove">Remove mutant from duty roster:</label>
+        <input type="text" id="mutant_to_remove" name="mutant_to_remove">
+        <button type="submit">Remove</button>
     </form>
 </head>
 <body>
