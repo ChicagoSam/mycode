@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>Please Identify Yourself, Hero!</title>
     <form action = "/xmen" method = "POST">
-        <h1>Welcome to Our Pet Store, {{ hero }}!</h1>
+        <h1>Welcome to the Danger Room, {{ hero }}!</h1>
         
 <p>Cerebro has located the following mutants!</p>
-<p>X-Men available for mission:</p>
+<p>X-Men available for training:</p>
 <ul>
 {% for mutant in mutant_list %}
 <li>{{ mutant|upper }}</li>

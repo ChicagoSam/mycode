@@ -30,6 +30,17 @@ def grabnewmutant():
     # every route must ALWAYS return something!
     return redirect("/")
 
+# TBD ADD WAY TO REMOVE MUTANT FROM DUTY ROSTER
+#@app.route("/xmen", methods=["??????"])
+#def removemutant():
+    # grab the name of the new mutant
+    # remove that name from the list above
+    #mutant_name= request.form.get("mutantvar") # <-- grab the value of a variable off a FORM
 
+    # mutant = hero the user typed in
+    #availmutants.????(mutant_name)
+
+    # every route must ALWAYS return something!
+    #return redirect("/")
 
 app.run(host="0.0.0.0", port=2224, debug=True)
