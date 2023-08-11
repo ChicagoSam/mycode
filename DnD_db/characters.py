@@ -14,7 +14,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS characters
              (id INTEGER PRIMARY KEY,
               name TEXT)''')
 
-# Insert some example data into the companies table
+# Characters
 c.execute("INSERT INTO characters (id, name) VALUES (1, 'Longspear Lux')")
 c.execute("INSERT INTO characters (id, name) VALUES (2, 'Bruno Breakbone')")
 c.execute("INSERT INTO characters (id, name) VALUES (3, 'Cyrus Sevenfingers')")

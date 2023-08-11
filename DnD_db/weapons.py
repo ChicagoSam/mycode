@@ -9,14 +9,14 @@ conn = sqlite3.connect('my_database.db')
 # Create a cursor object to execute SQL commands
 c = conn.cursor()
 
-# Create the products table with columns for ID, Name, and Company ID
+# Create the weapons table with columns for ID, Name, and Character ID
 c.execute('''CREATE TABLE IF NOT EXISTS weapons
             (id INTEGER PRIMARY KEY,
              name TEXT,
              characters_id INTEGER,
              FOREIGN KEY(characters_id) REFERENCES characters(id))''')
  
-# Insert some example data into the products table
+# Weapons
 c.execute("INSERT INTO weapons (id, name, characters_id) VALUES (1, 'Longspear', 1)")
 c.execute("INSERT INTO weapons (id, name, characters_id) VALUES (2, 'Fists', 2)")
 c.execute("INSERT INTO weapons (id, name, characters_id) VALUES (3, 'Longbow', 3)")
