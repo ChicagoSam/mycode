@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Please Identify Yourself, Hero!</title>
@@ -60,18 +58,17 @@
     <form action="/xmen" method="POST">
         <h1>Welcome to the Danger Room, {{ hero }}!</h1>
 
+        <p>Cerebro says these X-Men are available for training:</p>
         <p>Cerebro lists these X-Men available for training:</p>
         <ul>
         {% for mutant in mutant_list %}
             <li>{{ mutant|upper }}</li>
         {% endfor %}
         </ul>
-
         <p>Add mutant to duty roster:</p>
         <p><input type="text" name="mutantvar"></p>
         <p><input type="submit" value="Submit"></p>
     </form>
-
     <form action="/removemutant" method="post">
         <p>Remove mutant from duty roster:</p>
         <input type="text" id="mutant_to_remove" name="mutant_to_remove">
@@ -79,4 +76,3 @@
     </form>
 </body>
 </html>
-
