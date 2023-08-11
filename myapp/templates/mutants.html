@@ -3,12 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Please Identify Yourself, Hero!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"], button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <form action="/xmen" method="POST">
         <h1>Welcome to the Danger Room, {{ hero }}!</h1>
 
-        <p>Cerebro says these X-Men are available for training:</p>
+        <p>Cerebro lists these X-Men available for training:</p>
         <ul>
         {% for mutant in mutant_list %}
             <li>{{ mutant|upper }}</li>
