@@ -1,4 +1,5 @@
-# WORK IN PROGRESS, HARDCODEQUERY.PY HOLDS WORKING QUERY AT THIS POINT IN TIME
+#!/usr/bin/python3
+"""Sammy Tamimi | SQLite miniproject using D&D party"""
 
 import sqlite3
 
@@ -27,11 +28,9 @@ c.execute('''
     SELECT weapons.name
     FROM weapons
     JOIN characters ON characters.id = weapons.characters_id
-    JOIN characters ON characters.id = weapons.weapons_id
     WHERE characters.name = ?''', (character_name,))
 
 weapons = c.fetchall()
 print(f"{character_name} is wielding the following weapons:")
 for weapon in weapons:
     print(weapon[0])
-
