@@ -9,7 +9,8 @@ def get_name():
         else:
             print("Please enter your name.")
             # remark out above line and and enter a "default name"?
-            # return "default_name"
+            # return "default_name"?
+            # name = "default_name"?
 
 def get_age():
     return int(input("What is your age?"))
